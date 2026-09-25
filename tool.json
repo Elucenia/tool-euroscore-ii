@@ -1,0 +1,333 @@
+{
+  "tool": {
+    "id": "euroscore-ii",
+    "title": "EuroSCORE II",
+    "short": "Mortalidade prevista em cirurgia cardíaca",
+    "desc": "Calcule o EuroSCORE II (Nashef 2012): mortalidade hospitalar prevista em cirurgia cardíaca de adultos, com a equação logística e os coeficientes publicados.",
+    "lead": "Estima a mortalidade hospitalar de adultos submetidos a cirurgia cardíaca (revascularização, valvas, aorta torácica) a partir de 18 fatores do paciente, do coração e da operação.",
+    "spec": [
+      "cirurgia-cardiovascular",
+      "cardiologia",
+      "anestesiologia",
+      "medicina-intensiva"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "idade",
+        "Idade",
+        "num",
+        {
+          "min": 18,
+          "max": 100,
+          "unit": "anos",
+          "ph": "65"
+        }
+      ],
+      [
+        "sexo",
+        "Sexo",
+        "radio",
+        {
+          "opts": {
+            "F": "Feminino",
+            "M": "Masculino"
+          }
+        }
+      ],
+      [
+        "renal",
+        "Função renal (clearance de creatinina, Cockcroft-Gault)",
+        "sel",
+        {
+          "opts": {
+            "0": "Normal (&gt; 85 mL/min)",
+            "1": "Moderadamente reduzida (50 a 85 mL/min)",
+            "2": "Gravemente reduzida (&lt; 50 mL/min)",
+            "3": "Diálise (qualquer clearance)"
+          }
+        }
+      ],
+      [
+        "arteriopatia",
+        "Arteriopatia extracardíaca (claudicação, carótida ≥ 50%, amputação, cirurgia aórtica/periférica)",
+        "chk",
+        []
+      ],
+      [
+        "mobilidade",
+        "Mobilidade muito reduzida (doença musculoesquelética ou neurológica)",
+        "chk",
+        []
+      ],
+      [
+        "cir_prev",
+        "Cirurgia cardíaca prévia com abertura do pericárdio",
+        "chk",
+        []
+      ],
+      [
+        "pulmonar",
+        "Doença pulmonar crônica (uso prolongado de broncodilatador ou corticoide)",
+        "chk",
+        []
+      ],
+      [
+        "endocardite",
+        "Endocardite ativa (ainda em antibioticoterapia)",
+        "chk",
+        []
+      ],
+      [
+        "critico",
+        "Estado pré-operatório crítico (TV/FV, massagem, VM, inotrópico, BIA ou IRA oligúrica)",
+        "chk",
+        []
+      ],
+      [
+        "insulina",
+        "Diabetes em uso de insulina",
+        "chk",
+        []
+      ],
+      [
+        "nyha",
+        "Classe funcional NYHA",
+        "radio",
+        {
+          "opts": {
+            "1": "I",
+            "2": "II",
+            "3": "III",
+            "4": "IV"
+          }
+        }
+      ],
+      [
+        "ccs4",
+        "Angina CCS classe 4 (angina em repouso)",
+        "chk",
+        []
+      ],
+      [
+        "fe",
+        "Função do VE (fração de ejeção)",
+        "sel",
+        {
+          "opts": {
+            "0": "Boa (&gt; 50%)",
+            "1": "Moderada (31 a 50%)",
+            "2": "Ruim (21 a 30%)",
+            "3": "Muito ruim (≤ 20%)"
+          }
+        }
+      ],
+      [
+        "iam",
+        "IAM recente (≤ 90 dias)",
+        "chk",
+        []
+      ],
+      [
+        "hp",
+        "Pressão sistólica da artéria pulmonar",
+        "radio",
+        {
+          "opts": {
+            "0": "≤ 30 mmHg",
+            "1": "31 a 55 mmHg",
+            "2": "&gt; 55 mmHg"
+          }
+        }
+      ],
+      [
+        "urgencia",
+        "Urgência da operação",
+        "sel",
+        {
+          "opts": {
+            "0": "Eletiva",
+            "1": "Urgente (não pode ter alta sem operar)",
+            "2": "Emergência (antes do próximo dia útil)",
+            "3": "Salvamento (RCP a caminho do centro cirúrgico)"
+          }
+        }
+      ],
+      [
+        "proc",
+        "Peso da intervenção",
+        "sel",
+        {
+          "opts": {
+            "0": "Revascularização isolada",
+            "1": "1 procedimento que não é revascularização",
+            "2": "2 procedimentos",
+            "3": "3 ou mais procedimentos"
+          }
+        }
+      ],
+      [
+        "aorta",
+        "Cirurgia da aorta torácica",
+        "chk",
+        []
+      ]
+    ],
+    "formula": "<p>Mortalidade = e<sup>y</sup> / (1 + e<sup>y</sup>), com y = −5,324537 + Σ βᵢ·xᵢ.</p><p>Coeficientes (Nashef 2012): idade 0,0285181 por ano (x = 1 até 60 anos e +1 por ano acima de 60); sexo feminino 0,2196434; clearance 50–85 0,303553, &lt; 50 0,8592256, diálise 0,6421508; arteriopatia 0,5360268; mobilidade reduzida 0,2407181; cirurgia cardíaca prévia 1,118599; doença pulmonar crônica 0,1886564; endocardite ativa 0,6194522; estado crítico 1,086517; diabetes com insulina 0,3542749; NYHA II 0,1070545, III 0,2958358, IV 0,5597929; CCS 4 0,2226147; FE 31–50% 0,3150652, 21–30% 0,8084096, ≤ 20% 0,9346919; IAM recente 0,1528943; PSAP 31–55 0,1788899, &gt; 55 0,3491475; urgente 0,3174673, emergência 0,7039121, salvamento 1,362947; 1 procedimento não revascularização 0,0062118, 2 procedimentos 0,5521478, ≥ 3 0,9724533; aorta torácica 0,6527205.</p>",
+    "table": [
+      [
+        "Mortalidade prevista",
+        "Interpretação usada nesta ferramenta"
+      ],
+      [
+        "&lt; 4%",
+        "Risco cirúrgico baixo (critério da ESC/EACTS 2021 no Heart Team para estenose aórtica)"
+      ],
+      [
+        "4 a 8%",
+        "Risco aumentado"
+      ],
+      [
+        "≥ 8%",
+        "Risco alto"
+      ]
+    ],
+    "table_note": "O EuroSCORE II não define faixas de risco: o corte de 4% vem da diretriz ESC/EACTS 2021 de valvopatias; ≥ 8% é o limiar de alto risco usado nos estudos de TAVI.",
+    "tips": [
+      "Calcule o clearance de creatinina por Cockcroft-Gault com o peso real (há ferramenta de clearance no lote de cardiologia).",
+      "\"Peso da intervenção\" conta procedimentos maiores com abertura do pericárdio: revascularização + troca valvar aórtica = 2 procedimentos.",
+      "O modelo foi calibrado com dados de 2010: bom para comparar risco, mas pode superestimar a mortalidade em serviços de alto volume.",
+      "O escore não inclui fragilidade, cirrose, aorta em porcelana nem radiação torácica prévia: considere esses fatores na decisão do Heart Team.",
+      "Na estenose aórtica, o risco cirúrgico é só um dos critérios para escolher entre troca valvar cirúrgica e TAVI (idade, anatomia e comorbidades também contam)."
+    ],
+    "sources": [
+      [
+        "Nashef SAM et al. EuroSCORE II. Eur J Cardiothorac Surg, 2012.",
+        "https://doi.org/10.1093/ejcts/ezs043"
+      ],
+      [
+        "Vahanian A et al. 2021 ESC/EACTS Guidelines for the management of valvular heart disease. Eur Heart J, 2022.",
+        "https://doi.org/10.1093/eurheartj/ehab395"
+      ]
+    ],
+    "cases": [
+      [
+        "Homem de 60 anos, revascularização isolada eletiva, sem fatores: 0,50%",
+        {
+          "idade": 60,
+          "sexo": "M",
+          "renal": "0",
+          "nyha": "1",
+          "fe": "0",
+          "hp": "0",
+          "urgencia": "0",
+          "proc": "0"
+        },
+        {
+          "raw": {
+            "p": 0.4987
+          },
+          "level": "low",
+          "main": "0,50",
+          "tol": 0.005
+        }
+      ],
+      [
+        "Mulher de 75 anos, ClCr 60, NYHA III, FE 40%, troca valvar isolada: 2,35%",
+        {
+          "idade": 75,
+          "sexo": "F",
+          "renal": "1",
+          "nyha": "3",
+          "fe": "1",
+          "hp": "0",
+          "urgencia": "0",
+          "proc": "1"
+        },
+        {
+          "raw": {
+            "p": 2.348
+          },
+          "level": "low",
+          "tol": 0.01
+        }
+      ],
+      [
+        "Homem de 72 anos, DM com insulina, arteriopatia, DPOC, ClCr &lt; 50, FE 40%, revascularização: 6,29%",
+        {
+          "idade": 72,
+          "sexo": "M",
+          "renal": "2",
+          "insulina": true,
+          "arteriopatia": true,
+          "pulmonar": true,
+          "nyha": "1",
+          "fe": "1",
+          "hp": "0",
+          "urgencia": "0",
+          "proc": "0"
+        },
+        {
+          "raw": {
+            "p": 6.294
+          },
+          "level": "mid",
+          "tol": 0.01
+        }
+      ],
+      [
+        "Homem de 70 anos, reoperação urgente de 2 procedimentos, NYHA IV, FE 25%, PSAP 60: 21,3%",
+        {
+          "idade": 70,
+          "sexo": "M",
+          "renal": "0",
+          "cir_prev": true,
+          "nyha": "4",
+          "fe": "2",
+          "hp": "2",
+          "urgencia": "1",
+          "proc": "2"
+        },
+        {
+          "raw": {
+            "p": 21.33
+          },
+          "level": "high",
+          "tol": 0.02
+        }
+      ]
+    ],
+    "batch": "torax-vascular",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cardiotoracica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/torax-vascular.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/torax-vascular.php",
+    "sha256": "e99bbd1938580ff9b46e0252fdd8cb72e87c63869f934005b8ef6d807ce8b6e2",
+    "bytes": 91275
+  },
+  "clinicalValidation": "not-performed"
+}
