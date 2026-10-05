@@ -1,7 +1,10 @@
 [
   {
-    "label": "Homem de 60 anos, revascularização isolada eletiva, sem fatores: 0,50%",
-    "input": {
+    "id": "euroscore-ii",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Homem de 60 anos, revascularização isolada eletiva, sem fatores: 0,50%",
+    "originalInput": {
       "idade": 60,
       "sexo": "M",
       "renal": "0",
@@ -11,6 +14,78 @@
       "urgencia": "0",
       "proc": "0"
     },
+    "input": {
+      "idade": 60,
+      "sexo": "M",
+      "renal": "0",
+      "nyha": "1",
+      "fe": "0",
+      "hp": "0",
+      "urgencia": "0",
+      "proc": "0",
+      "arteriopatia": false,
+      "mobilidade": false,
+      "cir_prev": false,
+      "pulmonar": false,
+      "endocardite": false,
+      "critico": false,
+      "insulina": false,
+      "ccs4": false,
+      "iam": false,
+      "aorta": false
+    },
+    "amendments": [
+      {
+        "field": "arteriopatia",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "mobilidade",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "cir_prev",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "pulmonar",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "endocardite",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "critico",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "insulina",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "ccs4",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "iam",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "aorta",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      }
+    ],
     "expected": {
       "raw": {
         "p": 0.4987
@@ -19,21 +94,28 @@
       "main": "0,50",
       "tol": 0.005
     },
-    "originalInput": {
-      "idade": 60,
-      "sexo": "M",
-      "renal": "0",
-      "nyha": "1",
-      "fe": "0",
-      "hp": "0",
-      "urgencia": "0",
-      "proc": "0"
+    "recordedResult": {
+      "main": [
+        "0,50",
+        "%"
+      ],
+      "label": "Mortalidade hospitalar prevista (EuroSCORE II)",
+      "raw": {
+        "p": 0.4986515599632187,
+        "x": -5.2960189
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Mulher de 75 anos, ClCr 60, NYHA III, FE 40%, troca valvar isolada: 2,35%",
-    "input": {
+    "id": "euroscore-ii",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Mulher de 75 anos, ClCr 60, NYHA III, FE 40%, troca valvar isolada: 2,35%",
+    "originalInput": {
       "idade": 75,
       "sexo": "F",
       "renal": "1",
@@ -43,6 +125,78 @@
       "urgencia": "0",
       "proc": "1"
     },
+    "input": {
+      "idade": 75,
+      "sexo": "F",
+      "renal": "1",
+      "nyha": "3",
+      "fe": "1",
+      "hp": "0",
+      "urgencia": "0",
+      "proc": "1",
+      "arteriopatia": false,
+      "mobilidade": false,
+      "cir_prev": false,
+      "pulmonar": false,
+      "endocardite": false,
+      "critico": false,
+      "insulina": false,
+      "ccs4": false,
+      "iam": false,
+      "aorta": false
+    },
+    "amendments": [
+      {
+        "field": "arteriopatia",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "mobilidade",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "cir_prev",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "pulmonar",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "endocardite",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "critico",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "insulina",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "ccs4",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "iam",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "aorta",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      }
+    ],
     "expected": {
       "raw": {
         "p": 2.348
@@ -50,21 +204,28 @@
       "level": "low",
       "tol": 0.01
     },
-    "originalInput": {
-      "idade": 75,
-      "sexo": "F",
-      "renal": "1",
-      "nyha": "3",
-      "fe": "1",
-      "hp": "0",
-      "urgencia": "0",
-      "proc": "1"
+    "recordedResult": {
+      "main": [
+        "2,35",
+        "%"
+      ],
+      "label": "Mortalidade hospitalar prevista (EuroSCORE II)",
+      "raw": {
+        "p": 2.3477891488890354,
+        "x": -3.727938200000001
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Homem de 72 anos, DM com insulina, arteriopatia, DPOC, ClCr &lt; 50, FE 40%, revascularização: 6,29%",
-    "input": {
+    "id": "euroscore-ii",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Homem de 72 anos, DM com insulina, arteriopatia, DPOC, ClCr &lt; 50, FE 40%, revascularização: 6,29%",
+    "originalInput": {
       "idade": 72,
       "sexo": "M",
       "renal": "2",
@@ -77,6 +238,63 @@
       "urgencia": "0",
       "proc": "0"
     },
+    "input": {
+      "idade": 72,
+      "sexo": "M",
+      "renal": "2",
+      "insulina": true,
+      "arteriopatia": true,
+      "pulmonar": true,
+      "nyha": "1",
+      "fe": "1",
+      "hp": "0",
+      "urgencia": "0",
+      "proc": "0",
+      "mobilidade": false,
+      "cir_prev": false,
+      "endocardite": false,
+      "critico": false,
+      "ccs4": false,
+      "iam": false,
+      "aorta": false
+    },
+    "amendments": [
+      {
+        "field": "mobilidade",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "cir_prev",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "endocardite",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "critico",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "ccs4",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "iam",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "aorta",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      }
+    ],
     "expected": {
       "raw": {
         "p": 6.294
@@ -84,23 +302,38 @@
       "level": "mid",
       "tol": 0.01
     },
-    "originalInput": {
-      "idade": 72,
-      "sexo": "M",
-      "renal": "2",
-      "insulina": true,
-      "arteriopatia": true,
-      "pulmonar": true,
-      "nyha": "1",
-      "fe": "1",
-      "hp": "0",
-      "urgencia": "0",
-      "proc": "0"
+    "recordedResult": {
+      "main": [
+        "6,29",
+        "%"
+      ],
+      "label": "Mortalidade hospitalar prevista (EuroSCORE II)",
+      "raw": {
+        "p": 6.294074447294394,
+        "x": -2.7005528
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Homem de 70 anos, reoperação urgente de 2 procedimentos, NYHA IV, FE 25%, PSAP 60: 21,3%",
+    "id": "euroscore-ii",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Homem de 70 anos, reoperação urgente de 2 procedimentos, NYHA IV, FE 25%, PSAP 60: 21,3%",
+    "originalInput": {
+      "idade": 70,
+      "sexo": "M",
+      "renal": "0",
+      "cir_prev": true,
+      "nyha": "4",
+      "fe": "2",
+      "hp": "2",
+      "urgencia": "1",
+      "proc": "2"
+    },
     "input": {
       "idade": 70,
       "sexo": "M",
@@ -110,8 +343,64 @@
       "fe": "2",
       "hp": "2",
       "urgencia": "1",
-      "proc": "2"
+      "proc": "2",
+      "arteriopatia": false,
+      "mobilidade": false,
+      "pulmonar": false,
+      "endocardite": false,
+      "critico": false,
+      "insulina": false,
+      "ccs4": false,
+      "iam": false,
+      "aorta": false
     },
+    "amendments": [
+      {
+        "field": "arteriopatia",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "mobilidade",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "pulmonar",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "endocardite",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "critico",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "insulina",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "ccs4",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "iam",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      },
+      {
+        "field": "aorta",
+        "kind": "recorded-implicit-negative-materialized",
+        "value": false
+      }
+    ],
     "expected": {
       "raw": {
         "p": 21.33
@@ -119,17 +408,20 @@
       "level": "high",
       "tol": 0.02
     },
-    "originalInput": {
-      "idade": 70,
-      "sexo": "M",
-      "renal": "0",
-      "cir_prev": true,
-      "nyha": "4",
-      "fe": "2",
-      "hp": "2",
-      "urgencia": "1",
-      "proc": "2"
+    "recordedResult": {
+      "main": [
+        "21,33",
+        "%"
+      ],
+      "label": "Mortalidade hospitalar prevista (EuroSCORE II)",
+      "raw": {
+        "p": 21.327878304888824,
+        "x": -1.3052738000000004
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
   }
 ]

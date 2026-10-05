@@ -1,0 +1,1220 @@
+{
+  "receipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r5-all-calculators-http-results.json",
+    "bytes": 7105457,
+    "sha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7"
+  },
+  "build": {
+    "id": "RYDdJbZxqrM8sgoyKEQc-",
+    "standaloneServer": {
+      "file": "reports/review-20261005-completion/deploy-lock/r5-isolated-runtime/.next/standalone/server.js",
+      "sha256": "631d43264038e7aa367b5405041eb3706d73fd3366925a7ef17a07119cfa166e",
+      "bytes": 10457
+    },
+    "catalogPin": {
+      "file": "deliveries/elucenia-next-hostinger-r5/.next/server/pages/en/tools.json",
+      "sha256": "33917dfdae9bea59cae22bfca34eaef2a21046a832af98c1a8d2718075de63ec",
+      "bytes": 103793
+    }
+  },
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r5 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "tool": {
+    "id": "euroscore-ii",
+    "title": "EuroSCORE II",
+    "methodVersion": "Euro SCOREII/Nashef 2012:logístico, intercepto−5,324537, coeficientes originais; sem Euro SCOREI",
+    "implementationVersion": "euroscore-ii@native-2026-10-03+a40434c52011",
+    "sources": [
+      [
+        "Nashef SAM et al. EuroSCORE II. Eur J Cardiothorac Surg, 2012.",
+        "https://doi.org/10.1093/ejcts/ezs043"
+      ],
+      [
+        "Vahanian A et al. 2021 ESC/EACTS Guidelines for the management of valvular heart disease. Eur Heart J, 2022.",
+        "https://doi.org/10.1093/eurheartj/ehab395"
+      ]
+    ],
+    "limits": "O EuroSCORE II foi desenvolvido para morte no hospital de origem após cirurgia cardíaca de grande porte, com coleta em 2010. Não é o EuroSCORE I e não substitui a calibração na população ou serviço atuais. Definições dos fatores, elegibilidade e horizonte temporal devem corresponder ao modelo; a probabilidade não assegura um resultado individual.",
+    "sourceEditionEvidence": [
+      {
+        "citation": "Nashef SAM et al. EuroSCORE II. Eur J Cardiothorac Surg, 2012.",
+        "url": "https://doi.org/10.1093/ejcts/ezs043",
+        "class": "primary-publication-abstract-or-metadata-read",
+        "publicationEditionConfirmed": true,
+        "fullTextRetrieved": false,
+        "formulaConformance": "not-assessed",
+        "publication": {
+          "title": "EuroSCORE II.",
+          "year": "2012",
+          "firstPublicationDate": "2012-02-29",
+          "doi": "10.1093/ejcts/ezs043",
+          "pmid": "22378855",
+          "journal": "European journal of cardio-thoracic surgery : official journal of the European Association for Cardio-thoracic Surgery",
+          "authors": "Nashef SA, Roques F, Sharples LD, Nilsson J, Smith C, Goldstone AR, Lockowandt U."
+        },
+        "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/22378855/",
+        "abstractAvailable": true,
+        "fullTextSha256": null,
+        "abstractSha256": "f914004406689d30ae1ea27f282f026262ac3858d8b23fbaa8c72726fdfeaf06",
+        "matchedBy": "exact-DOI-or-PMID"
+      },
+      {
+        "citation": "Vahanian A et al. 2021 ESC/EACTS Guidelines for the management of valvular heart disease. Eur Heart J, 2022.",
+        "url": "https://doi.org/10.1093/eurheartj/ehab395",
+        "class": "primary-publication-abstract-or-metadata-read",
+        "publicationEditionConfirmed": true,
+        "fullTextRetrieved": false,
+        "formulaConformance": "not-assessed",
+        "publication": {
+          "title": "2021 ESC/EACTS Guidelines for the management of valvular heart disease.",
+          "year": "2022",
+          "firstPublicationDate": "2022-02-01",
+          "doi": "10.1093/eurheartj/ehab395",
+          "pmid": "34453165",
+          "journal": "European heart journal",
+          "authors": "Vahanian A, Beyersdorf F, Praz F, Milojevic M, Baldus S, Bauersachs J, Capodanno D, Conradi L, De Bonis M, De Paulis R, Delgado V, Freemantle N, Gilard M, Haugaa KH, Jeppsson A, Jüni P, Pierard L, Prendergast BD, Sádaba JR, Tribouilloy C, Wojakowski W, ESC/EACTS Scientific Document Group."
+        },
+        "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/34453165/",
+        "abstractAvailable": false,
+        "fullTextSha256": null,
+        "abstractSha256": null,
+        "matchedBy": "exact-DOI-or-PMID"
+      }
+    ],
+    "calculator": {
+      "file": "deliveries/elucenia-next-hostinger-r5/private/tool-code/euroscore-ii/calculator.js",
+      "sha256": "a40434c520115814b9a206fbc667ab6947c552124d23f58e8b908a24bc377a3e",
+      "bytes": 7149
+    },
+    "cases": 4,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "replayed": 4,
+    "passed": 4,
+    "failed": 0,
+    "status": "passed"
+  },
+  "results": [
+    {
+      "id": "euroscore-ii",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Homem de 60 anos, revascularização isolada eletiva, sem fatores: 0,50%",
+      "originalInput": {
+        "idade": 60,
+        "sexo": "M",
+        "renal": "0",
+        "nyha": "1",
+        "fe": "0",
+        "hp": "0",
+        "urgencia": "0",
+        "proc": "0"
+      },
+      "input": {
+        "idade": 60,
+        "sexo": "M",
+        "renal": "0",
+        "nyha": "1",
+        "fe": "0",
+        "hp": "0",
+        "urgencia": "0",
+        "proc": "0",
+        "arteriopatia": false,
+        "mobilidade": false,
+        "cir_prev": false,
+        "pulmonar": false,
+        "endocardite": false,
+        "critico": false,
+        "insulina": false,
+        "ccs4": false,
+        "iam": false,
+        "aorta": false
+      },
+      "amendments": [
+        {
+          "field": "arteriopatia",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "mobilidade",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "cir_prev",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "pulmonar",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "endocardite",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "critico",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "insulina",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "ccs4",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "iam",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "aorta",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "p": 0.4987
+        },
+        "level": "low",
+        "main": "0,50",
+        "tol": 0.005
+      },
+      "recordedResult": {
+        "main": [
+          "0,50",
+          "%"
+        ],
+        "label": "Mortalidade hospitalar prevista (EuroSCORE II)",
+        "raw": {
+          "p": 0.4986515599632187,
+          "x": -5.2960189
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/euroscore-ii/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "idade": 60,
+            "sexo": "M",
+            "renal": "0",
+            "nyha": "1",
+            "fe": "0",
+            "hp": "0",
+            "urgencia": "0",
+            "proc": "0",
+            "arteriopatia": false,
+            "mobilidade": false,
+            "cir_prev": false,
+            "pulmonar": false,
+            "endocardite": false,
+            "critico": false,
+            "insulina": false,
+            "ccs4": false,
+            "iam": false,
+            "aorta": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/euroscore-ii/calculate",
+          "startedAt": "2026-10-05T15:14:51.998Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "euroscore-ii",
+              "main": [
+                "0,50",
+                "%"
+              ],
+              "label": "Mortalidade hospitalar prevista (EuroSCORE II)",
+              "raw": {
+                "p": 0.4986515599632187,
+                "x": -5.2960189
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "2bcfee37238d5764a4f48b2af09e9e2d2a0243d76030ff4202acee5130a99d0f",
+          "bytes": 192,
+          "elapsedMs": 5.848700000002282
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/euroscore-ii/calculate",
+        "startedAt": "2026-10-05T15:14:51.998Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "euroscore-ii",
+            "main": [
+              "0,50",
+              "%"
+            ],
+            "label": "Mortalidade hospitalar prevista (EuroSCORE II)",
+            "raw": {
+              "p": 0.4986515599632187,
+              "x": -5.2960189
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "2bcfee37238d5764a4f48b2af09e9e2d2a0243d76030ff4202acee5130a99d0f",
+        "bytes": 192,
+        "elapsedMs": 5.848700000002282
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "0,50",
+            "obtained": "0,50",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.p",
+            "expected": 0.4987,
+            "obtained": 0.4986515599632187,
+            "tolerance": 0.005,
+            "difference": 0.00004844003678128317,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.p",
+            "expected": 0.4986515599632187,
+            "obtained": 0.4986515599632187,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.x",
+            "expected": -5.2960189,
+            "obtained": -5.2960189,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "0,50",
+            "obtained": "0,50",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "%",
+            "obtained": "%",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "euroscore-ii",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Mulher de 75 anos, ClCr 60, NYHA III, FE 40%, troca valvar isolada: 2,35%",
+      "originalInput": {
+        "idade": 75,
+        "sexo": "F",
+        "renal": "1",
+        "nyha": "3",
+        "fe": "1",
+        "hp": "0",
+        "urgencia": "0",
+        "proc": "1"
+      },
+      "input": {
+        "idade": 75,
+        "sexo": "F",
+        "renal": "1",
+        "nyha": "3",
+        "fe": "1",
+        "hp": "0",
+        "urgencia": "0",
+        "proc": "1",
+        "arteriopatia": false,
+        "mobilidade": false,
+        "cir_prev": false,
+        "pulmonar": false,
+        "endocardite": false,
+        "critico": false,
+        "insulina": false,
+        "ccs4": false,
+        "iam": false,
+        "aorta": false
+      },
+      "amendments": [
+        {
+          "field": "arteriopatia",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "mobilidade",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "cir_prev",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "pulmonar",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "endocardite",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "critico",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "insulina",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "ccs4",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "iam",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "aorta",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "p": 2.348
+        },
+        "level": "low",
+        "tol": 0.01
+      },
+      "recordedResult": {
+        "main": [
+          "2,35",
+          "%"
+        ],
+        "label": "Mortalidade hospitalar prevista (EuroSCORE II)",
+        "raw": {
+          "p": 2.3477891488890354,
+          "x": -3.727938200000001
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/euroscore-ii/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "idade": 75,
+            "sexo": "F",
+            "renal": "1",
+            "nyha": "3",
+            "fe": "1",
+            "hp": "0",
+            "urgencia": "0",
+            "proc": "1",
+            "arteriopatia": false,
+            "mobilidade": false,
+            "cir_prev": false,
+            "pulmonar": false,
+            "endocardite": false,
+            "critico": false,
+            "insulina": false,
+            "ccs4": false,
+            "iam": false,
+            "aorta": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/euroscore-ii/calculate",
+          "startedAt": "2026-10-05T15:14:52.310Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "euroscore-ii",
+              "main": [
+                "2,35",
+                "%"
+              ],
+              "label": "Mortalidade hospitalar prevista (EuroSCORE II)",
+              "raw": {
+                "p": 2.3477891488890354,
+                "x": -3.727938200000001
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "e3bda3aeb9a4be4008eebc621773ac0aad6cc1410a55ff816eb71235a74ff3cd",
+          "bytes": 200,
+          "elapsedMs": 3.2731999999959953
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/euroscore-ii/calculate",
+        "startedAt": "2026-10-05T15:14:52.310Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "euroscore-ii",
+            "main": [
+              "2,35",
+              "%"
+            ],
+            "label": "Mortalidade hospitalar prevista (EuroSCORE II)",
+            "raw": {
+              "p": 2.3477891488890354,
+              "x": -3.727938200000001
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "e3bda3aeb9a4be4008eebc621773ac0aad6cc1410a55ff816eb71235a74ff3cd",
+        "bytes": 200,
+        "elapsedMs": 3.2731999999959953
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.p",
+            "expected": 2.348,
+            "obtained": 2.3477891488890354,
+            "tolerance": 0.01,
+            "difference": 0.00021085111096441622,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.p",
+            "expected": 2.3477891488890354,
+            "obtained": 2.3477891488890354,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.x",
+            "expected": -3.727938200000001,
+            "obtained": -3.727938200000001,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "2,35",
+            "obtained": "2,35",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "%",
+            "obtained": "%",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "euroscore-ii",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Homem de 72 anos, DM com insulina, arteriopatia, DPOC, ClCr &lt; 50, FE 40%, revascularização: 6,29%",
+      "originalInput": {
+        "idade": 72,
+        "sexo": "M",
+        "renal": "2",
+        "insulina": true,
+        "arteriopatia": true,
+        "pulmonar": true,
+        "nyha": "1",
+        "fe": "1",
+        "hp": "0",
+        "urgencia": "0",
+        "proc": "0"
+      },
+      "input": {
+        "idade": 72,
+        "sexo": "M",
+        "renal": "2",
+        "insulina": true,
+        "arteriopatia": true,
+        "pulmonar": true,
+        "nyha": "1",
+        "fe": "1",
+        "hp": "0",
+        "urgencia": "0",
+        "proc": "0",
+        "mobilidade": false,
+        "cir_prev": false,
+        "endocardite": false,
+        "critico": false,
+        "ccs4": false,
+        "iam": false,
+        "aorta": false
+      },
+      "amendments": [
+        {
+          "field": "mobilidade",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "cir_prev",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "endocardite",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "critico",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "ccs4",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "iam",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "aorta",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "p": 6.294
+        },
+        "level": "mid",
+        "tol": 0.01
+      },
+      "recordedResult": {
+        "main": [
+          "6,29",
+          "%"
+        ],
+        "label": "Mortalidade hospitalar prevista (EuroSCORE II)",
+        "raw": {
+          "p": 6.294074447294394,
+          "x": -2.7005528
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/euroscore-ii/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "idade": 72,
+            "sexo": "M",
+            "renal": "2",
+            "insulina": true,
+            "arteriopatia": true,
+            "pulmonar": true,
+            "nyha": "1",
+            "fe": "1",
+            "hp": "0",
+            "urgencia": "0",
+            "proc": "0",
+            "mobilidade": false,
+            "cir_prev": false,
+            "endocardite": false,
+            "critico": false,
+            "ccs4": false,
+            "iam": false,
+            "aorta": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/euroscore-ii/calculate",
+          "startedAt": "2026-10-05T15:14:52.621Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "euroscore-ii",
+              "main": [
+                "6,29",
+                "%"
+              ],
+              "label": "Mortalidade hospitalar prevista (EuroSCORE II)",
+              "raw": {
+                "p": 6.294074447294394,
+                "x": -2.7005528
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "2f83c4c2cd562aad944bc4039ee06ee7cfa97df9fb2ac90ec33e18965d6f42f2",
+          "bytes": 191,
+          "elapsedMs": 9.830199999996694
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/euroscore-ii/calculate",
+        "startedAt": "2026-10-05T15:14:52.621Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "euroscore-ii",
+            "main": [
+              "6,29",
+              "%"
+            ],
+            "label": "Mortalidade hospitalar prevista (EuroSCORE II)",
+            "raw": {
+              "p": 6.294074447294394,
+              "x": -2.7005528
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "2f83c4c2cd562aad944bc4039ee06ee7cfa97df9fb2ac90ec33e18965d6f42f2",
+        "bytes": 191,
+        "elapsedMs": 9.830199999996694
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.p",
+            "expected": 6.294,
+            "obtained": 6.294074447294394,
+            "tolerance": 0.01,
+            "difference": 0.0000744472943940977,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.p",
+            "expected": 6.294074447294394,
+            "obtained": 6.294074447294394,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.x",
+            "expected": -2.7005528,
+            "obtained": -2.7005528,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "6,29",
+            "obtained": "6,29",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "%",
+            "obtained": "%",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "euroscore-ii",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Homem de 70 anos, reoperação urgente de 2 procedimentos, NYHA IV, FE 25%, PSAP 60: 21,3%",
+      "originalInput": {
+        "idade": 70,
+        "sexo": "M",
+        "renal": "0",
+        "cir_prev": true,
+        "nyha": "4",
+        "fe": "2",
+        "hp": "2",
+        "urgencia": "1",
+        "proc": "2"
+      },
+      "input": {
+        "idade": 70,
+        "sexo": "M",
+        "renal": "0",
+        "cir_prev": true,
+        "nyha": "4",
+        "fe": "2",
+        "hp": "2",
+        "urgencia": "1",
+        "proc": "2",
+        "arteriopatia": false,
+        "mobilidade": false,
+        "pulmonar": false,
+        "endocardite": false,
+        "critico": false,
+        "insulina": false,
+        "ccs4": false,
+        "iam": false,
+        "aorta": false
+      },
+      "amendments": [
+        {
+          "field": "arteriopatia",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "mobilidade",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "pulmonar",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "endocardite",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "critico",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "insulina",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "ccs4",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "iam",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "aorta",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "p": 21.33
+        },
+        "level": "high",
+        "tol": 0.02
+      },
+      "recordedResult": {
+        "main": [
+          "21,33",
+          "%"
+        ],
+        "label": "Mortalidade hospitalar prevista (EuroSCORE II)",
+        "raw": {
+          "p": 21.327878304888824,
+          "x": -1.3052738000000004
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/euroscore-ii/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "idade": 70,
+            "sexo": "M",
+            "renal": "0",
+            "cir_prev": true,
+            "nyha": "4",
+            "fe": "2",
+            "hp": "2",
+            "urgencia": "1",
+            "proc": "2",
+            "arteriopatia": false,
+            "mobilidade": false,
+            "pulmonar": false,
+            "endocardite": false,
+            "critico": false,
+            "insulina": false,
+            "ccs4": false,
+            "iam": false,
+            "aorta": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/euroscore-ii/calculate",
+          "startedAt": "2026-10-05T15:14:52.933Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "euroscore-ii",
+              "main": [
+                "21,33",
+                "%"
+              ],
+              "label": "Mortalidade hospitalar prevista (EuroSCORE II)",
+              "raw": {
+                "p": 21.327878304888824,
+                "x": -1.3052738000000004
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "063f393d412ac0c7c8b667ea0ee33c4945e7672df77008ce4e4b20e308258255",
+          "bytes": 202,
+          "elapsedMs": 8.865300000004936
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/euroscore-ii/calculate",
+        "startedAt": "2026-10-05T15:14:52.933Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "euroscore-ii",
+            "main": [
+              "21,33",
+              "%"
+            ],
+            "label": "Mortalidade hospitalar prevista (EuroSCORE II)",
+            "raw": {
+              "p": 21.327878304888824,
+              "x": -1.3052738000000004
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "063f393d412ac0c7c8b667ea0ee33c4945e7672df77008ce4e4b20e308258255",
+        "bytes": 202,
+        "elapsedMs": 8.865300000004936
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.p",
+            "expected": 21.33,
+            "obtained": 21.327878304888824,
+            "tolerance": 0.02,
+            "difference": 0.0021216951111746596,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.p",
+            "expected": 21.327878304888824,
+            "obtained": 21.327878304888824,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.x",
+            "expected": -1.3052738000000004,
+            "obtained": -1.3052738000000004,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "21,33",
+            "obtained": "21,33",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "%",
+            "obtained": "%",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "endBindings": true
+}

@@ -5,13 +5,13 @@
     "short": "Mortalidade prevista em cirurgia cardíaca",
     "desc": "Calcule o EuroSCORE II (Nashef 2012): mortalidade hospitalar prevista em cirurgia cardíaca de adultos, com a equação logística e os coeficientes publicados.",
     "lead": "Estima a mortalidade hospitalar de adultos submetidos a cirurgia cardíaca (revascularização, valvas, aorta torácica) a partir de 18 fatores do paciente, do coração e da operação.",
+    "kind": "Calculadora",
     "spec": [
       "cirurgia-cardiovascular",
       "cardiologia",
       "anestesiologia",
       "medicina-intensiva"
     ],
-    "tier": 1,
     "fields": [
       [
         "idade",
@@ -42,8 +42,8 @@
         {
           "opts": {
             "0": "Normal (&gt; 85 mL/min)",
-            "1": "Moderadamente reduzida (50 a 85 mL/min)",
-            "2": "Gravemente reduzida (&lt; 50 mL/min)",
+            "1": "Moderadamente reduzida (50 < clearance ≤ 85 mL/min)",
+            "2": "Gravemente reduzida (clearance ≤ 50 mL/min)",
             "3": "Diálise (qualquer clearance)"
           }
         }
@@ -52,43 +52,43 @@
         "arteriopatia",
         "Arteriopatia extracardíaca (claudicação, carótida ≥ 50%, amputação, cirurgia aórtica/periférica)",
         "chk",
-        []
+        {}
       ],
       [
         "mobilidade",
         "Mobilidade muito reduzida (doença musculoesquelética ou neurológica)",
         "chk",
-        []
+        {}
       ],
       [
         "cir_prev",
         "Cirurgia cardíaca prévia com abertura do pericárdio",
         "chk",
-        []
+        {}
       ],
       [
         "pulmonar",
         "Doença pulmonar crônica (uso prolongado de broncodilatador ou corticoide)",
         "chk",
-        []
+        {}
       ],
       [
         "endocardite",
         "Endocardite ativa (ainda em antibioticoterapia)",
         "chk",
-        []
+        {}
       ],
       [
         "critico",
         "Estado pré-operatório crítico (TV/FV, massagem, VM, inotrópico, BIA ou IRA oligúrica)",
         "chk",
-        []
+        {}
       ],
       [
         "insulina",
         "Diabetes em uso de insulina",
         "chk",
-        []
+        {}
       ],
       [
         "nyha",
@@ -107,7 +107,7 @@
         "ccs4",
         "Angina CCS classe 4 (angina em repouso)",
         "chk",
-        []
+        {}
       ],
       [
         "fe",
@@ -126,7 +126,7 @@
         "iam",
         "IAM recente (≤ 90 dias)",
         "chk",
-        []
+        {}
       ],
       [
         "hp",
@@ -170,36 +170,10 @@
         "aorta",
         "Cirurgia da aorta torácica",
         "chk",
-        []
+        {}
       ]
     ],
-    "formula": "<p>Mortalidade = e<sup>y</sup> / (1 + e<sup>y</sup>), com y = −5,324537 + Σ βᵢ·xᵢ.</p><p>Coeficientes (Nashef 2012): idade 0,0285181 por ano (x = 1 até 60 anos e +1 por ano acima de 60); sexo feminino 0,2196434; clearance 50–85 0,303553, &lt; 50 0,8592256, diálise 0,6421508; arteriopatia 0,5360268; mobilidade reduzida 0,2407181; cirurgia cardíaca prévia 1,118599; doença pulmonar crônica 0,1886564; endocardite ativa 0,6194522; estado crítico 1,086517; diabetes com insulina 0,3542749; NYHA II 0,1070545, III 0,2958358, IV 0,5597929; CCS 4 0,2226147; FE 31–50% 0,3150652, 21–30% 0,8084096, ≤ 20% 0,9346919; IAM recente 0,1528943; PSAP 31–55 0,1788899, &gt; 55 0,3491475; urgente 0,3174673, emergência 0,7039121, salvamento 1,362947; 1 procedimento não revascularização 0,0062118, 2 procedimentos 0,5521478, ≥ 3 0,9724533; aorta torácica 0,6527205.</p>",
-    "table": [
-      [
-        "Mortalidade prevista",
-        "Interpretação usada nesta ferramenta"
-      ],
-      [
-        "&lt; 4%",
-        "Risco cirúrgico baixo (critério da ESC/EACTS 2021 no Heart Team para estenose aórtica)"
-      ],
-      [
-        "4 a 8%",
-        "Risco aumentado"
-      ],
-      [
-        "≥ 8%",
-        "Risco alto"
-      ]
-    ],
-    "table_note": "O EuroSCORE II não define faixas de risco: o corte de 4% vem da diretriz ESC/EACTS 2021 de valvopatias; ≥ 8% é o limiar de alto risco usado nos estudos de TAVI.",
-    "tips": [
-      "Calcule o clearance de creatinina por Cockcroft-Gault com o peso real (há ferramenta de clearance no lote de cardiologia).",
-      "\"Peso da intervenção\" conta procedimentos maiores com abertura do pericárdio: revascularização + troca valvar aórtica = 2 procedimentos.",
-      "O modelo foi calibrado com dados de 2010: bom para comparar risco, mas pode superestimar a mortalidade em serviços de alto volume.",
-      "O escore não inclui fragilidade, cirrose, aorta em porcelana nem radiação torácica prévia: considere esses fatores na decisão do Heart Team.",
-      "Na estenose aórtica, o risco cirúrgico é só um dos critérios para escolher entre troca valvar cirúrgica e TAVI (idade, anatomia e comorbidades também contam)."
-    ],
+    "formula": "<p>Mortalidade = e<sup>y</sup> / (1 + e<sup>y</sup>), com y = −5,324537 + Σ βᵢ·xᵢ.</p><p>Coeficientes (Nashef 2012): idade 0,0285181 por ano (x = 1 até 60 anos e +1 por ano acima de 60); sexo feminino 0,2196434; clearance &gt; 50 e ≤ 85 mL/min: 0,303553; clearance ≤ 50 mL/min: 0,8592256; diálise: 0,6421508; arteriopatia 0,5360268; mobilidade reduzida 0,2407181; cirurgia cardíaca prévia 1,118599; doença pulmonar crônica 0,1886564; endocardite ativa 0,6194522; estado crítico 1,086517; diabetes com insulina 0,3542749; NYHA II 0,1070545, III 0,2958358, IV 0,5597929; CCS 4 0,2226147; FE 31–50% 0,3150652, 21–30% 0,8084096, ≤ 20% 0,9346919; IAM recente 0,1528943; PSAP 31–55 0,1788899, &gt; 55 0,3491475; urgente 0,3174673, emergência 0,7039121, salvamento 1,362947; 1 procedimento não revascularização 0,0062118, 2 procedimentos 0,5521478, ≥ 3 0,9724533; aorta torácica 0,6527205.</p>",
     "sources": [
       [
         "Nashef SAM et al. EuroSCORE II. Eur J Cardiothorac Surg, 2012.",
@@ -297,9 +271,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -308,17 +279,576 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T21:47:03.432Z",
+      "total": 2048,
+      "passed": 2048,
+      "sourceRowCount": 2048,
+      "uniqueApiInputCount": 2048,
+      "scope": "OriginalNashef2012 assigned coefficients/age18–95; exact two-decimal display only. Raw nearest score agreement excluded;1437sourceDecimal failures retained.",
+      "caseStorage": {
+        "file": "independent-source-cases.json",
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "sha256": "e5cbf5cab4f39ee66acdd3b7682d3d4aefda5c6618905414e1323be39a4e06eb",
+        "total": 2048,
+        "uniqueApiInputCount": 2048,
+        "bankRowCount": 2048
+      },
+      "sourceExpectation": {
+        "file": "reports/review-20261003/source33-accepted-scope-expectations.json",
+        "sha256": "c51a745f432eef23771c7e52dea4c8b82f501ce54d3bfe640e449e04883bc907"
+      },
+      "originalEvidence": {
+        "file": "reports/review-20261003/six-primary-own-source-check-final33.json",
+        "sha256": "f41286e6919665d7480d19067e0fa325292e1753677e419375b69a9739843521"
+      },
+      "sourceRead": {
+        "file": "reports/review-20261003/six-primary-own-observations-final33.json",
+        "sha256": "f4047a76d52e04932e39b336d9a395c949640cb519103160ebe5241fd4ad67a1"
+      },
+      "independentPeer": {
+        "status": "completed",
+        "kind": "independent-technical-packaging-and-replay",
+        "file": "reports/review-20261003/source33-bank-packaging-root-peer-r2.json",
+        "sha256": "5201eb9c2655a20545a1e836e61bb26045b368c4dfc6f690a9dde3b63bdc398e",
+        "checks": 568121,
+        "scope": "Root independent technical packaging/projection peer, against the source author pre-engine expectations. Not a second blind primary-source derivation or clinical/professional-language/rights approval. Exact source33 exclusions retained; no tolerance relaxation.",
+        "secondBlindPrimarySourceDerivation": false,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed"
+      },
+      "numericPolicy": {
+        "acceptedProjection": "Exact source85digitDecimal risk display rounded positive-half-up to two decimal places only"
+      },
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "previousImplementationBindings": [
+        {
+          "file": "apps/website/private/tool-code/euroscore-ii/calculator.js",
+          "sha256": "7c9734152b6336290aef33a5b655be4efb027a69161f0bd736d3e639511c9844"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/euroscore-ii/calculator.js",
+          "sha256": "7c9734152b6336290aef33a5b655be4efb027a69161f0bd736d3e639511c9844"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/euroscore-ii/calculator.js",
+          "sha256": "7c9734152b6336290aef33a5b655be4efb027a69161f0bd736d3e639511c9844"
+        }
+      ],
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/euroscore-ii/calculator.js",
+          "sha256": "a40434c520115814b9a206fbc667ab6947c552124d23f58e8b908a24bc377a3e"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/euroscore-ii/calculator.js",
+          "sha256": "a40434c520115814b9a206fbc667ab6947c552124d23f58e8b908a24bc377a3e"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/euroscore-ii/calculator.js",
+          "sha256": "a40434c520115814b9a206fbc667ab6947c552124d23f58e8b908a24bc377a3e"
+        }
+      ],
+      "appliedCodeRebind": {
+        "preparedAt": "2026-10-04T22:14:22.998Z",
+        "predecessorBank": {
+          "file": "reports/review-20261003/source33-bank-owned-stage-r2/apps/website/private/tool-code/euroscore-ii/independent-source-cases.json",
+          "sha256": "e6b06d269c494fa9513d69dc3d5f2d8e7ec7f59ce3f702e1ebf6e7e0bffb698d"
+        },
+        "reason": "Source field-label metadata-only amendment; old captured implementation hashes/outputs retained verbatim, new full-file hash bound separately.",
+        "scope": "Only declared selected numeric projections; no clinical, rubric, language-rights or full-method approval.",
+        "evidence": [
+          {
+            "file": "reports/review-20261003/source33-bank-packaging-root-peer-r2.json",
+            "sha256": "5201eb9c2655a20545a1e836e61bb26045b368c4dfc6f690a9dde3b63bdc398e"
+          },
+          {
+            "file": "reports/review-20261003/source34-35-36-bank-packaging-root-peer.json",
+            "sha256": "105c058072ec3b7ebf3ccc4b33b81ee909dbc2d7174f48bba2854ff4a1c56675"
+          },
+          {
+            "file": "reports/review-20261003/wai-capurro-independent-review-publication-final36.json",
+            "sha256": "6c1c812d6d287e8d3bca93f7d033e859a451870e64c01b6463c3f679c1f4fa88"
+          },
+          {
+            "file": "reports/review-20261003/source33-documentary-independent-review-publication-final36-r2.json",
+            "sha256": "0de32ed8bb4eaaca7a2e342b9a624604c426fe3010e7f1f5869b10464d7b45e3"
+          },
+          {
+            "file": "reports/review-20261003/henssge-independent-review-publication-final36-r2.json",
+            "sha256": "41adfdd55fe0bc0f57078b007098703815c10216cd824ab1c582d2e9e16fd0b2"
+          },
+          {
+            "file": "reports/review-20261003/henssge-global-independent-review-verify-final36-r2.json",
+            "sha256": "77a3bb5b5dc5a53a03864efd7de03aa1d26682083695ee7377694399eb64acfe"
+          }
+        ]
+      },
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Euro SCOREII/Nashef 2012:logístico, intercepto−5,324537, coeficientes originais; sem Euro SCOREI",
+    "implementationVersion": "euroscore-ii@native-2026-10-03+a40434c52011",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/22378855/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Mortalidade = e y / (1 + e y ), com y = −5,324537 + Σ βᵢ·xᵢ. Coeficientes (Nashef 2012): idade 0,0285181 por ano (x = 1 até 60 anos e +1 por ano acima de 60); sexo feminino 0,2196434; clearance > 50 e ≤ 85 mL/min: 0,303553; clearance ≤ 50 mL/min: 0,8592256; diálise: 0,6421508; arteriopatia 0,5360268; mobilidade reduzida 0,2407181; cirurgia cardíaca prévia 1,118599; doença pulmonar crônica 0,1886564; endocardite ativa 0,6194522; estado crítico 1,086517; diabetes com insulina 0,3542749; NYHA II 0,1070545, III 0,2958358, IV 0,5597929; CCS 4 0,2226147; FE 31–50% 0,3150652, 21–30% 0,8084096, ≤ 20% 0,9346919; IAM recente 0,1528943; PSAP 31–55 0,1788899, > 55 0,3491475; urgente 0,3174673, emergência 0,7039121, salvamento 1,362947; 1 procedimento não revascularização 0,0062118, 2 procedimentos 0,5521478, ≥ 3 0,9724533; aorta torácica 0,6527205.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "idade",
+            "label": "Idade",
+            "type": "num",
+            "min": 18,
+            "max": 100,
+            "unit": "anos",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "sexo",
+            "label": "Sexo",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "F": "Feminino",
+              "M": "Masculino"
+            }
+          },
+          {
+            "key": "renal",
+            "label": "Função renal (clearance de creatinina, Cockcroft-Gault)",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Normal (&gt; 85 mL/min)",
+              "1": "Moderadamente reduzida (50 < clearance ≤ 85 mL/min)",
+              "2": "Gravemente reduzida (clearance ≤ 50 mL/min)",
+              "3": "Diálise (qualquer clearance)"
+            }
+          },
+          {
+            "key": "arteriopatia",
+            "label": "Arteriopatia extracardíaca (claudicação, carótida ≥ 50%, amputação, cirurgia aórtica/periférica)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "mobilidade",
+            "label": "Mobilidade muito reduzida (doença musculoesquelética ou neurológica)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "cir_prev",
+            "label": "Cirurgia cardíaca prévia com abertura do pericárdio",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "pulmonar",
+            "label": "Doença pulmonar crônica (uso prolongado de broncodilatador ou corticoide)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "endocardite",
+            "label": "Endocardite ativa (ainda em antibioticoterapia)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "critico",
+            "label": "Estado pré-operatório crítico (TV/FV, massagem, VM, inotrópico, BIA ou IRA oligúrica)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "insulina",
+            "label": "Diabetes em uso de insulina",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "nyha",
+            "label": "Classe funcional NYHA",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "1": "I",
+              "2": "II",
+              "3": "III",
+              "4": "IV"
+            }
+          },
+          {
+            "key": "ccs4",
+            "label": "Angina CCS classe 4 (angina em repouso)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "fe",
+            "label": "Função do VE (fração de ejeção)",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Boa (&gt; 50%)",
+              "1": "Moderada (31 a 50%)",
+              "2": "Ruim (21 a 30%)",
+              "3": "Muito ruim (≤ 20%)"
+            }
+          },
+          {
+            "key": "iam",
+            "label": "IAM recente (≤ 90 dias)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "hp",
+            "label": "Pressão sistólica da artéria pulmonar",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "≤ 30 mmHg",
+              "1": "31 a 55 mmHg",
+              "2": "&gt; 55 mmHg"
+            }
+          },
+          {
+            "key": "urgencia",
+            "label": "Urgência da operação",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Eletiva",
+              "1": "Urgente (não pode ter alta sem operar)",
+              "2": "Emergência (antes do próximo dia útil)",
+              "3": "Salvamento (RCP a caminho do centro cirúrgico)"
+            }
+          },
+          {
+            "key": "proc",
+            "label": "Peso da intervenção",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Revascularização isolada",
+              "1": "1 procedimento que não é revascularização",
+              "2": "2 procedimentos",
+              "3": "3 ou mais procedimentos"
+            }
+          },
+          {
+            "key": "aorta",
+            "label": "Cirurgia da aorta torácica",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "079c8209de011132c0b97635944d6d102e49654cd3082c0ef642fbc59b4d95a4"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Nashef SAM et al. EuroSCORE II. Eur J Cardiothorac Surg, 2012.",
+          "url": "https://doi.org/10.1093/ejcts/ezs043",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "EuroSCORE II.",
+            "year": "2012",
+            "firstPublicationDate": "2012-02-29",
+            "doi": "10.1093/ejcts/ezs043",
+            "pmid": "22378855",
+            "journal": "European journal of cardio-thoracic surgery : official journal of the European Association for Cardio-thoracic Surgery",
+            "authors": "Nashef SA, Roques F, Sharples LD, Nilsson J, Smith C, Goldstone AR, Lockowandt U."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/22378855/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "f914004406689d30ae1ea27f282f026262ac3858d8b23fbaa8c72726fdfeaf06",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Vahanian A et al. 2021 ESC/EACTS Guidelines for the management of valvular heart disease. Eur Heart J, 2022.",
+          "url": "https://doi.org/10.1093/eurheartj/ehab395",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "2021 ESC/EACTS Guidelines for the management of valvular heart disease.",
+            "year": "2022",
+            "firstPublicationDate": "2022-02-01",
+            "doi": "10.1093/eurheartj/ehab395",
+            "pmid": "34453165",
+            "journal": "European heart journal",
+            "authors": "Vahanian A, Beyersdorf F, Praz F, Milojevic M, Baldus S, Bauersachs J, Capodanno D, Conradi L, De Bonis M, De Paulis R, Delgado V, Freemantle N, Gilard M, Haugaa KH, Jeppsson A, Jüni P, Pierard L, Prendergast BD, Sádaba JR, Tribouilloy C, Wojakowski W, ESC/EACTS Scientific Document Group."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/34453165/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T21:47:03.432Z",
+        "total": 2048,
+        "passed": 2048,
+        "sourceRowCount": 2048,
+        "uniqueApiInputCount": 2048,
+        "scope": "OriginalNashef2012 assigned coefficients/age18–95; exact two-decimal display only. Raw nearest score agreement excluded;1437sourceDecimal failures retained.",
+        "caseStorage": {
+          "file": "independent-source-cases.json",
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "sha256": "e5cbf5cab4f39ee66acdd3b7682d3d4aefda5c6618905414e1323be39a4e06eb",
+          "total": 2048,
+          "uniqueApiInputCount": 2048,
+          "bankRowCount": 2048
+        },
+        "sourceExpectation": {
+          "file": "reports/review-20261003/source33-accepted-scope-expectations.json",
+          "sha256": "c51a745f432eef23771c7e52dea4c8b82f501ce54d3bfe640e449e04883bc907"
+        },
+        "originalEvidence": {
+          "file": "reports/review-20261003/six-primary-own-source-check-final33.json",
+          "sha256": "f41286e6919665d7480d19067e0fa325292e1753677e419375b69a9739843521"
+        },
+        "sourceRead": {
+          "file": "reports/review-20261003/six-primary-own-observations-final33.json",
+          "sha256": "f4047a76d52e04932e39b336d9a395c949640cb519103160ebe5241fd4ad67a1"
+        },
+        "independentPeer": {
+          "status": "completed",
+          "kind": "independent-technical-packaging-and-replay",
+          "file": "reports/review-20261003/source33-bank-packaging-root-peer-r2.json",
+          "sha256": "5201eb9c2655a20545a1e836e61bb26045b368c4dfc6f690a9dde3b63bdc398e",
+          "checks": 568121,
+          "scope": "Root independent technical packaging/projection peer, against the source author pre-engine expectations. Not a second blind primary-source derivation or clinical/professional-language/rights approval. Exact source33 exclusions retained; no tolerance relaxation.",
+          "secondBlindPrimarySourceDerivation": false,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed"
+        },
+        "numericPolicy": {
+          "acceptedProjection": "Exact source85digitDecimal risk display rounded positive-half-up to two decimal places only"
+        },
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "previousImplementationBindings": [
+          {
+            "file": "apps/website/private/tool-code/euroscore-ii/calculator.js",
+            "sha256": "7c9734152b6336290aef33a5b655be4efb027a69161f0bd736d3e639511c9844"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/euroscore-ii/calculator.js",
+            "sha256": "7c9734152b6336290aef33a5b655be4efb027a69161f0bd736d3e639511c9844"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/euroscore-ii/calculator.js",
+            "sha256": "7c9734152b6336290aef33a5b655be4efb027a69161f0bd736d3e639511c9844"
+          }
+        ],
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/euroscore-ii/calculator.js",
+            "sha256": "a40434c520115814b9a206fbc667ab6947c552124d23f58e8b908a24bc377a3e"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/euroscore-ii/calculator.js",
+            "sha256": "a40434c520115814b9a206fbc667ab6947c552124d23f58e8b908a24bc377a3e"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/euroscore-ii/calculator.js",
+            "sha256": "a40434c520115814b9a206fbc667ab6947c552124d23f58e8b908a24bc377a3e"
+          }
+        ],
+        "appliedCodeRebind": {
+          "preparedAt": "2026-10-04T22:14:22.998Z",
+          "predecessorBank": {
+            "file": "reports/review-20261003/source33-bank-owned-stage-r2/apps/website/private/tool-code/euroscore-ii/independent-source-cases.json",
+            "sha256": "e6b06d269c494fa9513d69dc3d5f2d8e7ec7f59ce3f702e1ebf6e7e0bffb698d"
+          },
+          "reason": "Source field-label metadata-only amendment; old captured implementation hashes/outputs retained verbatim, new full-file hash bound separately.",
+          "scope": "Only declared selected numeric projections; no clinical, rubric, language-rights or full-method approval.",
+          "evidence": [
+            {
+              "file": "reports/review-20261003/source33-bank-packaging-root-peer-r2.json",
+              "sha256": "5201eb9c2655a20545a1e836e61bb26045b368c4dfc6f690a9dde3b63bdc398e"
+            },
+            {
+              "file": "reports/review-20261003/source34-35-36-bank-packaging-root-peer.json",
+              "sha256": "105c058072ec3b7ebf3ccc4b33b81ee909dbc2d7174f48bba2854ff4a1c56675"
+            },
+            {
+              "file": "reports/review-20261003/wai-capurro-independent-review-publication-final36.json",
+              "sha256": "6c1c812d6d287e8d3bca93f7d033e859a451870e64c01b6463c3f679c1f4fa88"
+            },
+            {
+              "file": "reports/review-20261003/source33-documentary-independent-review-publication-final36-r2.json",
+              "sha256": "0de32ed8bb4eaaca7a2e342b9a624604c426fe3010e7f1f5869b10464d7b45e3"
+            },
+            {
+              "file": "reports/review-20261003/henssge-independent-review-publication-final36-r2.json",
+              "sha256": "41adfdd55fe0bc0f57078b007098703815c10216cd824ab1c582d2e9e16fd0b2"
+            },
+            {
+              "file": "reports/review-20261003/henssge-global-independent-review-verify-final36-r2.json",
+              "sha256": "77a3bb5b5dc5a53a03864efd7de03aa1d26682083695ee7377694399eb64acfe"
+            }
+          ]
+        },
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "a40434c520115814b9a206fbc667ab6947c552124d23f58e8b908a24bc377a3e",
+      "source33DocumentaryAmendment": {
+        "at": "2026-10-04T21:51:13.545Z",
+        "sourceInput": {
+          "file": "reports/review-20261003/source33-documentary-authorship-input.cjs",
+          "sha256": "53e9503e632cf008d94994e68a629012f697ae57f5bace06bb6795b47c6edf1e"
+        },
+        "scope": "Source attribution/presentation only; two Euro renal labels place exact50 into severe bucket. No coefficient/algorithm/cutoff/modelcode/fixture/clinical approval change.",
+        "readScope": [
+          {
+            "id": "euroscore2012",
+            "url": "https://academic.oup.com/ejcts/article/41/4/734/646622?login=false",
+            "readScope": "Original Table6 coefficient and Table5 renal grouping in publisher HTML read directly; PDF timeout/403 and image cache miss retained. Exact50 belongs≤50; PA55 ambiguity excluded."
+          }
+        ],
+        "previousMethodVersion": "Euro SCOREII/Nashef 2012:logístico, intercepto−5,324537, coeficientes originais; sem Euro SCOREI",
+        "previousFormula": "<p>Mortalidade = e<sup>y</sup> / (1 + e<sup>y</sup>), com y = −5,324537 + Σ βᵢ·xᵢ.</p><p>Coeficientes (Nashef 2012): idade 0,0285181 por ano (x = 1 até 60 anos e +1 por ano acima de 60); sexo feminino 0,2196434; clearance 50–85 0,303553, &lt; 50 0,8592256, diálise 0,6421508; arteriopatia 0,5360268; mobilidade reduzida 0,2407181; cirurgia cardíaca prévia 1,118599; doença pulmonar crônica 0,1886564; endocardite ativa 0,6194522; estado crítico 1,086517; diabetes com insulina 0,3542749; NYHA II 0,1070545, III 0,2958358, IV 0,5597929; CCS 4 0,2226147; FE 31–50% 0,3150652, 21–30% 0,8084096, ≤ 20% 0,9346919; IAM recente 0,1528943; PSAP 31–55 0,1788899, &gt; 55 0,3491475; urgente 0,3174673, emergência 0,7039121, salvamento 1,362947; 1 procedimento não revascularização 0,0062118, 2 procedimentos 0,5521478, ≥ 3 0,9724533; aorta torácica 0,6527205.</p>",
+        "previousLimits": "O EuroSCORE II foi desenvolvido para morte no hospital de origem após cirurgia cardíaca de grande porte, com coleta em 2010. Não é o EuroSCORE I e não substitui a calibração na população ou serviço atuais. Definições dos fatores, elegibilidade e horizonte temporal devem corresponder ao modelo; a probabilidade não assegura um resultado individual.",
+        "sourceFullMethodConformance": false,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "rightsApproval": "not-performed"
+      },
+      "inputContractHashHistory": [
+        {
+          "hash": "68086791ebd49d0c730b752d4eb198fe7c8b59417d022f89c39ea6441a1537a8",
+          "reason": "Exact peer-reviewed source36 formula/field documentary amendment; previous formula/fields/hash retained by owned donor recipes. No undisclosed numeric change.",
+          "evidence": [
+            {
+              "file": "reports/review-20261003/wai-capurro-owned-candidate-final35-r4.json",
+              "sha256": "05f9bd9d400a8685b02ba632acee9e42bfc10ee87d06a89cba0b6beb8980b261"
+            },
+            {
+              "file": "reports/review-20261003/source33-documentary-owned-candidate-r2.json",
+              "sha256": "1663d36b02f2d71e2d4f3935ea12511f3a5da664f08e31cc826eea869e0bafa0"
+            },
+            {
+              "file": "reports/review-20261003/henssge-2024-owned-candidate-final35-r2.json",
+              "sha256": "d30ec0633e7c2f6e7f18a1629167f3968b49e4534e7e3c767e4ad4fc3b0ef38c"
+            }
+          ]
+        }
+      ],
+      "source36MetadataRebind": {
+        "previousImplementationHash": "7c9734152b6336290aef33a5b655be4efb027a69161f0bd736d3e639511c9844",
+        "currentImplementationHash": "a40434c520115814b9a206fbc667ab6947c552124d23f58e8b908a24bc377a3e",
+        "arithmeticVersionUnchanged": "euroscore-ii@native-2026-10-03+7c9734152b63",
+        "reason": "Two renal option labels only; numeric body and expected bank unchanged. Original captured implementation/outputs retained in bank, current full-file SHA separately rebound.",
+        "candidate": {
+          "file": "reports/review-20261003/source33-documentary-owned-candidate-r2.json",
+          "sha256": "1663d36b02f2d71e2d4f3935ea12511f3a5da664f08e31cc826eea869e0bafa0"
+        },
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "implementationUpdatedAt": "2026-10-05T13:02:54.731Z",
+      "currentImplementationIdentityEvidence": {
+        "file": "reports/review-20261003/current-implementation-identities-application-final45.json",
+        "scope": "Exact current adapter bytes. Method edition, inputs, mathematical expressions, bibliographic checks, source-case history and approval statuses unchanged by this metadata correction."
+      }
+    },
+    "limits": "O EuroSCORE II foi desenvolvido para morte no hospital de origem após cirurgia cardíaca de grande porte, com coleta em 2010. Não é o EuroSCORE I e não substitui a calibração na população ou serviço atuais. Definições dos fatores, elegibilidade e horizonte temporal devem corresponder ao modelo; a probabilidade não assegura um resultado individual.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.958Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não traz coeficientes, exclusões, idade mínima ou todas as definições. Modelo II não é I e probabilidade histórica não garante calibração no hospital atual."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "source33DocumentaryAmendment": {
+        "at": "2026-10-04T21:51:13.545Z",
+        "sourceInput": {
+          "file": "reports/review-20261003/source33-documentary-authorship-input.cjs",
+          "sha256": "53e9503e632cf008d94994e68a629012f697ae57f5bace06bb6795b47c6edf1e"
+        },
+        "scope": "Source attribution/presentation only; two Euro renal labels place exact50 into severe bucket. No coefficient/algorithm/cutoff/modelcode/fixture/clinical approval change.",
+        "readScope": [
+          {
+            "id": "euroscore2012",
+            "url": "https://academic.oup.com/ejcts/article/41/4/734/646622?login=false",
+            "readScope": "Original Table6 coefficient and Table5 renal grouping in publisher HTML read directly; PDF timeout/403 and image cache miss retained. Exact50 belongs≤50; PA55 ambiguity excluded."
+          }
+        ],
+        "previousMethodVersion": "Euro SCOREII/Nashef 2012:logístico, intercepto−5,324537, coeficientes originais; sem Euro SCOREI",
+        "previousFormula": "<p>Mortalidade = e<sup>y</sup> / (1 + e<sup>y</sup>), com y = −5,324537 + Σ βᵢ·xᵢ.</p><p>Coeficientes (Nashef 2012): idade 0,0285181 por ano (x = 1 até 60 anos e +1 por ano acima de 60); sexo feminino 0,2196434; clearance 50–85 0,303553, &lt; 50 0,8592256, diálise 0,6421508; arteriopatia 0,5360268; mobilidade reduzida 0,2407181; cirurgia cardíaca prévia 1,118599; doença pulmonar crônica 0,1886564; endocardite ativa 0,6194522; estado crítico 1,086517; diabetes com insulina 0,3542749; NYHA II 0,1070545, III 0,2958358, IV 0,5597929; CCS 4 0,2226147; FE 31–50% 0,3150652, 21–30% 0,8084096, ≤ 20% 0,9346919; IAM recente 0,1528943; PSAP 31–55 0,1788899, &gt; 55 0,3491475; urgente 0,3174673, emergência 0,7039121, salvamento 1,362947; 1 procedimento não revascularização 0,0062118, 2 procedimentos 0,5521478, ≥ 3 0,9724533; aorta torácica 0,6527205.</p>",
+        "previousLimits": "O EuroSCORE II foi desenvolvido para morte no hospital de origem após cirurgia cardíaca de grande porte, com coleta em 2010. Não é o EuroSCORE I e não substitui a calibração na população ou serviço atuais. Definições dos fatores, elegibilidade e horizonte temporal devem corresponder ao modelo; a probabilidade não assegura um resultado individual.",
+        "sourceFullMethodConformance": false,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "rightsApproval": "not-performed"
+      }
+    },
+    "implementationUpdatedAt": "2026-10-05T13:02:54.731Z"
+  },
+  "sourceToolSha256": "e2ed1476748252dc671c9033c027be8790dea69888947dcb9e6bd0dae42a2b90",
+  "omittedFullReferenceBanks": [
+    {
+      "at": "independentArithmeticTest.cases",
+      "rows": 8,
+      "sha256": "00f7b6ed3bc385bb9322273ad19f47bf20a794794cf0a1fe6a0e1b357e993116",
+      "reason": "Full independent reference bank omitted from standalone public candidate; original evidence references retained"
+    },
+    {
+      "at": "versionEvidence.independentArithmetic.cases",
+      "rows": 8,
+      "sha256": "00f7b6ed3bc385bb9322273ad19f47bf20a794794cf0a1fe6a0e1b357e993116",
+      "reason": "Embedded complete independent bank omitted; edition, scope and evidence references retained"
     }
+  ],
+  "currentSource": {
+    "file": "apps/website/private/tool-code/euroscore-ii/calculator.js",
+    "bytes": 7149,
+    "sha256": "a40434c520115814b9a206fbc667ab6947c552124d23f58e8b908a24bc377a3e"
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
-  },
-  "clinicalValidation": "not-performed"
+  "clinicalValidation": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

@@ -1,0 +1,176 @@
+{
+  "completeIndependentBank": {
+    "file": "independent-source-cases.json",
+    "sha256": "e5cbf5cab4f39ee66acdd3b7682d3d4aefda5c6618905414e1323be39a4e06eb",
+    "bytes": 6293280,
+    "uniqueApiInputs": 2048,
+    "bankRows": 2048,
+    "sourceContextCount": 2048,
+    "scope": "OriginalNashef2012 assigned coefficients/age18–95; exact two-decimal display only. Raw nearest score agreement excluded;1437sourceDecimal failures retained.",
+    "clinicalApproval": "not-performed",
+    "professionalLanguageApproval": "not-performed",
+    "sourceRightsApproval": "not-performed",
+    "fullMethodConformance": "not-performed"
+  },
+  "completeIndependentBankExecution": {
+    "id": "euroscore-ii",
+    "uniqueApiInputs": 2048,
+    "bankRows": 2048,
+    "executedInputRows": 2048,
+    "checks": 6148,
+    "notExposed": [
+      "Raw logit/probability against sourceDecimal excluded: original1437 four-EPS disagreements retained, not relaxed. Exactrenal50 selector correction is a separate source amendment; pulmonary55 conflict, factor observation, recalibration, fullmethod/clinical prognosis excluded."
+    ],
+    "scope": "OriginalNashef2012 assigned coefficients/age18–95; exact two-decimal display only. Raw nearest score agreement excluded;1437sourceDecimal failures retained.",
+    "clinicalApproval": "not-performed",
+    "professionalLanguageApproval": "not-performed",
+    "fullMethodConformance": "not-performed",
+    "sourceRightsApproval": "not-performed"
+  },
+  "stage": "prepared-not-published",
+  "id": "euroscore-ii",
+  "repository": "Elucenia/tool-euroscore-ii",
+  "build": {
+    "id": "6QpMzbnUBE2fep9nyJzTM",
+    "directory": ".next-private-final36",
+    "receiptSha256": "05823c22753741cd9947b8a5edad0c3f232f5cc4e935d1015837524ac6c34d0b"
+  },
+  "baseline": {
+    "parentCommitSha": "74a56f0fbd438293b063a1dba8e2a9510a9457cd",
+    "baseTreeSha": "20066bf979fd36c6ec3d822c1be555ee556de7c6",
+    "indexBlobSha": "8f810693ceb873fdfd77b692a376d95d47231278",
+    "protectedFiles": {
+      "LICENSE": {
+        "path": "LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "size": 11358,
+        "url": "https://api.github.com/repos/Elucenia/tool-euroscore-ii/git/blobs/d645695673349e3947e8e5ae42332d0ac3164cd7"
+      },
+      "NOTICE": {
+        "path": "NOTICE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ab9002866d002885439e2ecccd1ba06de406020b",
+        "size": 1601,
+        "url": "https://api.github.com/repos/Elucenia/tool-euroscore-ii/git/blobs/ab9002866d002885439e2ecccd1ba06de406020b"
+      },
+      "AUTHORSHIP.md": {
+        "path": "AUTHORSHIP.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "83a1ca455934b266ec85346892f8613e96f8d44c",
+        "size": 3245,
+        "url": "https://api.github.com/repos/Elucenia/tool-euroscore-ii/git/blobs/83a1ca455934b266ec85346892f8613e96f8d44c"
+      },
+      "CITATION.cff": {
+        "path": "CITATION.cff",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fa151331bd576e8fa478cd839ac93df60a30bef3",
+        "size": 865,
+        "url": "https://api.github.com/repos/Elucenia/tool-euroscore-ii/git/blobs/fa151331bd576e8fa478cd839ac93df60a30bef3"
+      },
+      "SECURITY.md": {
+        "path": "SECURITY.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+        "size": 894,
+        "url": "https://api.github.com/repos/Elucenia/tool-euroscore-ii/git/blobs/44eafb996937916cbe53e24fa9c5208fe03d5767"
+      },
+      "CONTRIBUTING.md": {
+        "path": "CONTRIBUTING.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "76dce82dffd590b3ff8e0ee3532722702b2811af",
+        "size": 1463,
+        "url": "https://api.github.com/repos/Elucenia/tool-euroscore-ii/git/blobs/76dce82dffd590b3ff8e0ee3532722702b2811af"
+      },
+      ".github/workflows/ci.yml": {
+        "path": ".github/workflows/ci.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+        "size": 279,
+        "url": "https://api.github.com/repos/Elucenia/tool-euroscore-ii/git/blobs/7d3f2f34aa2e948d30695d82d64361467d9e6485"
+      },
+      ".gitattributes": {
+        "path": ".gitattributes",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+        "size": 19,
+        "url": "https://api.github.com/repos/Elucenia/tool-euroscore-ii/git/blobs/6313b56c57848efce05faa7aa7e901ccfc2886ea"
+      },
+      ".gitignore": {
+        "path": ".gitignore",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+        "size": 42,
+        "url": "https://api.github.com/repos/Elucenia/tool-euroscore-ii/git/blobs/e375bd25cf1a574310ac4c7af0299884556e81e1"
+      }
+    }
+  },
+  "methodSourceModules": [
+    "calculator.js"
+  ],
+  "implementationBrowserSha256": "280c83dc56f7717c12bc3b57b9b1ddd2dccc3a8ee7e2003a507a95f37cb620a2",
+  "localeDataSha256": "51fd51aefccdb4568674edb4c6ed276c93e9ca339934f4d353deca35aa5e54fd",
+  "originalStyleSha256": "8fd25e9dc1c0980e3b39b2375d36b96276eec3cbc24284cbc3cc01dc00a67a5c",
+  "originalIndexSha256": "e83597ffba894761ac20f4f945966a94fcc0de1351198292d177883c718af97c",
+  "example": {
+    "label": "Current source-owned complete UI/API fixture",
+    "input": {
+      "idade": 60,
+      "sexo": "M",
+      "renal": "0",
+      "nyha": "1",
+      "fe": "0",
+      "hp": "0",
+      "urgencia": "0",
+      "proc": "0"
+    },
+    "expected": {
+      "raw": {
+        "p": 0.4987
+      },
+      "main": "0,50",
+      "tol": 0.005
+    },
+    "obtained": {
+      "id": "euroscore-ii",
+      "main": [
+        "0,50",
+        "%"
+      ],
+      "label": "Mortalidade hospitalar prevista (EuroSCORE II)",
+      "raw": {
+        "p": 0.4986515599632187,
+        "x": -5.2960189
+      },
+      "clinicalValidation": "not-performed"
+    },
+    "scope": "Source-owned example Node/browser wiring parity; not a new clinical oracle"
+  },
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed",
+  "documentationLocales": [
+    "pt-BR",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ar",
+    "zh",
+    "ja",
+    "hi"
+  ],
+  "documentationTemplateSha256": "ae4c41b39ab92a14adbfab83b946751a75c8168b5927e1f808d1c629ec032ea4",
+  "appWrites": false,
+  "externalMutations": false
+}
