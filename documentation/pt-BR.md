@@ -161,3 +161,43 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Risco cirúrgico baixo (< 4%)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Soma logística (β₀ + Σβ) | -5,296 |
+
+
+### 2
+
+Risco cirúrgico baixo (< 4%)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Soma logística (β₀ + Σβ) | -3,728 |
+
+
+### 3
+
+Risco cirúrgico aumentado (4 a 8%)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Soma logística (β₀ + Σβ) | -2,701 |
+
+
+### 4
+
+Risco cirúrgico alto (≥ 8%)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Soma logística (β₀ + Σβ) | -1,305 |
+

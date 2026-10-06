@@ -1,0 +1,1175 @@
+{
+  "id": "euroscore-ii",
+  "implementationVersion": "euroscore-ii@native-2026-10-05+b115b0082c9b",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Homem de 60 anos, revascularização isolada eletiva, sem fatores: 0,50%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Soma logística (β₀ + Σβ)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "-5,296",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risco cirúrgico baixo (< 4%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Mulher de 75 anos, ClCr 60, NYHA III, FE 40%, troca valvar isolada: 2,35%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Soma logística (β₀ + Σβ)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "-3,728",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risco cirúrgico baixo (< 4%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Homem de 72 anos, DM com insulina, arteriopatia, DPOC, ClCr &lt; 50, FE 40%, revascularização: 6,29%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Soma logística (β₀ + Σβ)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "-2,701",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risco cirúrgico aumentado (4 a 8%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Homem de 70 anos, reoperação urgente de 2 procedimentos, NYHA IV, FE 25%, PSAP 60: 21,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Soma logística (β₀ + Σβ)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "-1,305",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risco cirúrgico alto (≥ 8%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Homem de 60 anos, revascularização isolada eletiva, sem fatores: 0,50%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Logistic sum (β₀ + Σβ)",
+                "locale": "en",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-5.296",
+                "locale": "en",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -5.296
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Low surgical risk (< 4%)",
+            "locale": "en",
+            "template": "documented-authored-137f6083a415e027ad35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Mulher de 75 anos, ClCr 60, NYHA III, FE 40%, troca valvar isolada: 2,35%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Logistic sum (β₀ + Σβ)",
+                "locale": "en",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-3.728",
+                "locale": "en",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -3.728
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Low surgical risk (< 4%)",
+            "locale": "en",
+            "template": "documented-authored-137f6083a415e027ad35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Homem de 72 anos, DM com insulina, arteriopatia, DPOC, ClCr &lt; 50, FE 40%, revascularização: 6,29%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Logistic sum (β₀ + Σβ)",
+                "locale": "en",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-2.701",
+                "locale": "en",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -2.701
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Increased surgical risk (4 to 8%)",
+            "locale": "en",
+            "template": "documented-authored-2334fbd46a99b0516893"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Homem de 70 anos, reoperação urgente de 2 procedimentos, NYHA IV, FE 25%, PSAP 60: 21,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Logistic sum (β₀ + Σβ)",
+                "locale": "en",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-1.305",
+                "locale": "en",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -1.305
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "High surgical risk (≥ 8%)",
+            "locale": "en",
+            "template": "documented-authored-b05ceabf2432430402a3"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Homem de 60 anos, revascularização isolada eletiva, sem fatores: 0,50%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Suma logística (β₀ + Σβ)",
+                "locale": "es",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-5,296",
+                "locale": "es",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -5.296
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Riesgo quirúrgico bajo (< 4%)",
+            "locale": "es",
+            "template": "documented-authored-137f6083a415e027ad35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Mulher de 75 anos, ClCr 60, NYHA III, FE 40%, troca valvar isolada: 2,35%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Suma logística (β₀ + Σβ)",
+                "locale": "es",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-3,728",
+                "locale": "es",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -3.728
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Riesgo quirúrgico bajo (< 4%)",
+            "locale": "es",
+            "template": "documented-authored-137f6083a415e027ad35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Homem de 72 anos, DM com insulina, arteriopatia, DPOC, ClCr &lt; 50, FE 40%, revascularização: 6,29%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Suma logística (β₀ + Σβ)",
+                "locale": "es",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-2,701",
+                "locale": "es",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -2.701
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Riesgo quirúrgico aumentado (4 a 8%)",
+            "locale": "es",
+            "template": "documented-authored-2334fbd46a99b0516893"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Homem de 70 anos, reoperação urgente de 2 procedimentos, NYHA IV, FE 25%, PSAP 60: 21,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Suma logística (β₀ + Σβ)",
+                "locale": "es",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-1,305",
+                "locale": "es",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -1.305
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Riesgo quirúrgico alto (≥ 8%)",
+            "locale": "es",
+            "template": "documented-authored-b05ceabf2432430402a3"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Homem de 60 anos, revascularização isolada eletiva, sem fatores: 0,50%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Somme logistique (β₀ + Σβ)",
+                "locale": "fr",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-5,296",
+                "locale": "fr",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -5.296
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risque chirurgical faible (< 4%)",
+            "locale": "fr",
+            "template": "documented-authored-137f6083a415e027ad35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Mulher de 75 anos, ClCr 60, NYHA III, FE 40%, troca valvar isolada: 2,35%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Somme logistique (β₀ + Σβ)",
+                "locale": "fr",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-3,728",
+                "locale": "fr",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -3.728
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risque chirurgical faible (< 4%)",
+            "locale": "fr",
+            "template": "documented-authored-137f6083a415e027ad35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Homem de 72 anos, DM com insulina, arteriopatia, DPOC, ClCr &lt; 50, FE 40%, revascularização: 6,29%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Somme logistique (β₀ + Σβ)",
+                "locale": "fr",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-2,701",
+                "locale": "fr",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -2.701
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risque chirurgical augmenté (4 à 8%)",
+            "locale": "fr",
+            "template": "documented-authored-2334fbd46a99b0516893"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Homem de 70 anos, reoperação urgente de 2 procedimentos, NYHA IV, FE 25%, PSAP 60: 21,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Somme logistique (β₀ + Σβ)",
+                "locale": "fr",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-1,305",
+                "locale": "fr",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -1.305
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risque chirurgical élevé (≥ 8%)",
+            "locale": "fr",
+            "template": "documented-authored-b05ceabf2432430402a3"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Homem de 60 anos, revascularização isolada eletiva, sem fatores: 0,50%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Logistische Summe (β₀ + Σβ)",
+                "locale": "de",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-5,296",
+                "locale": "de",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -5.296
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Niedriges Operationsrisiko (< 4%)",
+            "locale": "de",
+            "template": "documented-authored-137f6083a415e027ad35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Mulher de 75 anos, ClCr 60, NYHA III, FE 40%, troca valvar isolada: 2,35%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Logistische Summe (β₀ + Σβ)",
+                "locale": "de",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-3,728",
+                "locale": "de",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -3.728
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Niedriges Operationsrisiko (< 4%)",
+            "locale": "de",
+            "template": "documented-authored-137f6083a415e027ad35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Homem de 72 anos, DM com insulina, arteriopatia, DPOC, ClCr &lt; 50, FE 40%, revascularização: 6,29%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Logistische Summe (β₀ + Σβ)",
+                "locale": "de",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-2,701",
+                "locale": "de",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -2.701
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Erhöhtes Operationsrisiko (4 bis 8%)",
+            "locale": "de",
+            "template": "documented-authored-2334fbd46a99b0516893"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Homem de 70 anos, reoperação urgente de 2 procedimentos, NYHA IV, FE 25%, PSAP 60: 21,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Logistische Summe (β₀ + Σβ)",
+                "locale": "de",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-1,305",
+                "locale": "de",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -1.305
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Hohes Operationsrisiko (≥ 8%)",
+            "locale": "de",
+            "template": "documented-authored-b05ceabf2432430402a3"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Homem de 60 anos, revascularização isolada eletiva, sem fatores: 0,50%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Somma logistica (β₀ + Σβ)",
+                "locale": "it",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-5,296",
+                "locale": "it",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -5.296
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rischio chirurgico basso (< 4%)",
+            "locale": "it",
+            "template": "documented-authored-137f6083a415e027ad35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Mulher de 75 anos, ClCr 60, NYHA III, FE 40%, troca valvar isolada: 2,35%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Somma logistica (β₀ + Σβ)",
+                "locale": "it",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-3,728",
+                "locale": "it",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -3.728
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rischio chirurgico basso (< 4%)",
+            "locale": "it",
+            "template": "documented-authored-137f6083a415e027ad35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Homem de 72 anos, DM com insulina, arteriopatia, DPOC, ClCr &lt; 50, FE 40%, revascularização: 6,29%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Somma logistica (β₀ + Σβ)",
+                "locale": "it",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-2,701",
+                "locale": "it",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -2.701
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rischio chirurgico aumentato (4 a 8%)",
+            "locale": "it",
+            "template": "documented-authored-2334fbd46a99b0516893"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Homem de 70 anos, reoperação urgente de 2 procedimentos, NYHA IV, FE 25%, PSAP 60: 21,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Somma logistica (β₀ + Σβ)",
+                "locale": "it",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-1,305",
+                "locale": "it",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -1.305
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rischio chirurgico alto (≥ 8%)",
+            "locale": "it",
+            "template": "documented-authored-b05ceabf2432430402a3"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Homem de 60 anos, revascularização isolada eletiva, sem fatores: 0,50%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "المجموع اللوجستي (β₀ + Σβ)",
+                "locale": "ar",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "؜-٥٫٢٩٦",
+                "locale": "ar",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -5.296
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "مخاطر جراحية منخفضة (< 4%)",
+            "locale": "ar",
+            "template": "documented-authored-137f6083a415e027ad35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Mulher de 75 anos, ClCr 60, NYHA III, FE 40%, troca valvar isolada: 2,35%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "المجموع اللوجستي (β₀ + Σβ)",
+                "locale": "ar",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "؜-٣٫٧٢٨",
+                "locale": "ar",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -3.728
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "مخاطر جراحية منخفضة (< 4%)",
+            "locale": "ar",
+            "template": "documented-authored-137f6083a415e027ad35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Homem de 72 anos, DM com insulina, arteriopatia, DPOC, ClCr &lt; 50, FE 40%, revascularização: 6,29%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "المجموع اللوجستي (β₀ + Σβ)",
+                "locale": "ar",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "؜-٢٫٧٠١",
+                "locale": "ar",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -2.701
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "مخاطر جراحية متزايدة (4 إلى 8%)",
+            "locale": "ar",
+            "template": "documented-authored-2334fbd46a99b0516893"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Homem de 70 anos, reoperação urgente de 2 procedimentos, NYHA IV, FE 25%, PSAP 60: 21,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "المجموع اللوجستي (β₀ + Σβ)",
+                "locale": "ar",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "؜-١٫٣٠٥",
+                "locale": "ar",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -1.305
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "مخاطر جراحية مرتفعة (≥ 8%)",
+            "locale": "ar",
+            "template": "documented-authored-b05ceabf2432430402a3"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Homem de 60 anos, revascularização isolada eletiva, sem fatores: 0,50%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "逻辑和（β₀ + Σβ）",
+                "locale": "zh",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-5.296",
+                "locale": "zh",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -5.296
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "手术风险低（< 4%）",
+            "locale": "zh",
+            "template": "documented-authored-137f6083a415e027ad35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Mulher de 75 anos, ClCr 60, NYHA III, FE 40%, troca valvar isolada: 2,35%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "逻辑和（β₀ + Σβ）",
+                "locale": "zh",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-3.728",
+                "locale": "zh",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -3.728
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "手术风险低（< 4%）",
+            "locale": "zh",
+            "template": "documented-authored-137f6083a415e027ad35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Homem de 72 anos, DM com insulina, arteriopatia, DPOC, ClCr &lt; 50, FE 40%, revascularização: 6,29%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "逻辑和（β₀ + Σβ）",
+                "locale": "zh",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-2.701",
+                "locale": "zh",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -2.701
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "手术风险增加（4 至 8%）",
+            "locale": "zh",
+            "template": "documented-authored-2334fbd46a99b0516893"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Homem de 70 anos, reoperação urgente de 2 procedimentos, NYHA IV, FE 25%, PSAP 60: 21,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "逻辑和（β₀ + Σβ）",
+                "locale": "zh",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-1.305",
+                "locale": "zh",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -1.305
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "手术风险高（≥ 8%）",
+            "locale": "zh",
+            "template": "documented-authored-b05ceabf2432430402a3"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Homem de 60 anos, revascularização isolada eletiva, sem fatores: 0,50%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "ロジスティック和（β₀ + Σβ）",
+                "locale": "ja",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-5.296",
+                "locale": "ja",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -5.296
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "手術リスクが低い（< 4%）",
+            "locale": "ja",
+            "template": "documented-authored-137f6083a415e027ad35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Mulher de 75 anos, ClCr 60, NYHA III, FE 40%, troca valvar isolada: 2,35%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "ロジスティック和（β₀ + Σβ）",
+                "locale": "ja",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-3.728",
+                "locale": "ja",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -3.728
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "手術リスクが低い（< 4%）",
+            "locale": "ja",
+            "template": "documented-authored-137f6083a415e027ad35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Homem de 72 anos, DM com insulina, arteriopatia, DPOC, ClCr &lt; 50, FE 40%, revascularização: 6,29%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "ロジスティック和（β₀ + Σβ）",
+                "locale": "ja",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-2.701",
+                "locale": "ja",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -2.701
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "手術リスクが上昇（4～8%）",
+            "locale": "ja",
+            "template": "documented-authored-2334fbd46a99b0516893"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Homem de 70 anos, reoperação urgente de 2 procedimentos, NYHA IV, FE 25%, PSAP 60: 21,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "ロジスティック和（β₀ + Σβ）",
+                "locale": "ja",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-1.305",
+                "locale": "ja",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -1.305
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "手術リスクが高い（≥ 8%）",
+            "locale": "ja",
+            "template": "documented-authored-b05ceabf2432430402a3"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Homem de 60 anos, revascularização isolada eletiva, sem fatores: 0,50%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "लॉजिस्टिक योग (β₀ + Σβ)",
+                "locale": "hi",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-5.296",
+                "locale": "hi",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -5.296
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "निम्न शल्य जोखिम (< 4%)",
+            "locale": "hi",
+            "template": "documented-authored-137f6083a415e027ad35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Mulher de 75 anos, ClCr 60, NYHA III, FE 40%, troca valvar isolada: 2,35%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "लॉजिस्टिक योग (β₀ + Σβ)",
+                "locale": "hi",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-3.728",
+                "locale": "hi",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -3.728
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "निम्न शल्य जोखिम (< 4%)",
+            "locale": "hi",
+            "template": "documented-authored-137f6083a415e027ad35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Homem de 72 anos, DM com insulina, arteriopatia, DPOC, ClCr &lt; 50, FE 40%, revascularização: 6,29%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "लॉजिस्टिक योग (β₀ + Σβ)",
+                "locale": "hi",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-2.701",
+                "locale": "hi",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -2.701
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "बढ़ा हुआ शल्य जोखिम (4 से 8%)",
+            "locale": "hi",
+            "template": "documented-authored-2334fbd46a99b0516893"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Homem de 70 anos, reoperação urgente de 2 procedimentos, NYHA IV, FE 25%, PSAP 60: 21,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "लॉजिस्टिक योग (β₀ + Σβ)",
+                "locale": "hi",
+                "template": "documented-authored-74b8e666cd3988ebeff6"
+              },
+              "value": {
+                "text": "-1.305",
+                "locale": "hi",
+                "template": "documented-authored-257169d23e8dbdc6fe22",
+                "sourceNumbers": [
+                  -1.305
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "उच्च शल्य जोखिम (≥ 8%)",
+            "locale": "hi",
+            "template": "documented-authored-b05ceabf2432430402a3"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

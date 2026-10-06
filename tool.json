@@ -391,7 +391,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Euro SCOREII/Nashef 2012:logístico, intercepto−5,324537, coeficientes originais; sem Euro SCOREI",
-    "implementationVersion": "euroscore-ii@native-2026-10-03+a40434c52011",
+    "implementationVersion": "euroscore-ii@native-2026-10-05+b115b0082c9b",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/22378855/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -727,7 +727,7 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "a40434c520115814b9a206fbc667ab6947c552124d23f58e8b908a24bc377a3e",
+      "implementationHash": "b115b0082c9bff7d53aeec5b8b5394c5f72374f2fb2734c38f3b3ea18339dc27",
       "source33DocumentaryAmendment": {
         "at": "2026-10-04T21:51:13.545Z",
         "sourceInput": {
@@ -788,7 +788,35 @@
       "currentImplementationIdentityEvidence": {
         "file": "reports/review-20261003/current-implementation-identities-application-final45.json",
         "scope": "Exact current adapter bytes. Method edition, inputs, mathematical expressions, bibliographic checks, source-case history and approval statuses unchanged by this metadata correction."
-      }
+      },
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "euroscore-ii@native-2026-10-03+a40434c52011",
+          "previousImplementationHash": "a40434c520115814b9a206fbc667ab6947c552124d23f58e8b908a24bc377a3e",
+          "implementationHash": "b115b0082c9bff7d53aeec5b8b5394c5f72374f2fb2734c38f3b3ea18339dc27",
+          "scientificBodySha256": "4a25fa6e73a13591c064a93170a9ea7cb251064088ac1f1aa5e1b1b42208dcf8",
+          "metadataContractHash": "079c8209de011132c0b97635944d6d102e49654cd3082c0ef642fbc59b4d95a4",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O EuroSCORE II foi desenvolvido para morte no hospital de origem após cirurgia cardíaca de grande porte, com coleta em 2010. Não é o EuroSCORE I e não substitui a calibração na população ou serviço atuais. Definições dos fatores, elegibilidade e horizonte temporal devem corresponder ao modelo; a probabilidade não assegura um resultado individual.",
     "sourceLimitEvidence": {
@@ -828,25 +856,23 @@
     },
     "implementationUpdatedAt": "2026-10-05T13:02:54.731Z"
   },
-  "sourceToolSha256": "e2ed1476748252dc671c9033c027be8790dea69888947dcb9e6bd0dae42a2b90",
+  "sourceToolSha256": "33160c442fa311df96ff0016edc8831ed7e8dd5e642bc1a577f25a8fc9cd044b",
   "omittedFullReferenceBanks": [
     {
-      "at": "independentArithmeticTest.cases",
       "rows": 8,
       "sha256": "00f7b6ed3bc385bb9322273ad19f47bf20a794794cf0a1fe6a0e1b357e993116",
-      "reason": "Full independent reference bank omitted from standalone public candidate; original evidence references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
-      "at": "versionEvidence.independentArithmetic.cases",
       "rows": 8,
       "sha256": "00f7b6ed3bc385bb9322273ad19f47bf20a794794cf0a1fe6a0e1b357e993116",
-      "reason": "Embedded complete independent bank omitted; edition, scope and evidence references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "currentSource": {
     "file": "apps/website/private/tool-code/euroscore-ii/calculator.js",
-    "bytes": 7149,
-    "sha256": "a40434c520115814b9a206fbc667ab6947c552124d23f58e8b908a24bc377a3e"
+    "bytes": 7354,
+    "sha256": "b115b0082c9bff7d53aeec5b8b5394c5f72374f2fb2734c38f3b3ea18339dc27"
   },
   "clinicalValidation": "not-performed",
   "professionalLanguageReview": "not-performed",
